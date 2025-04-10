@@ -1,5 +1,29 @@
-.grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content:end;
+  /* align-items: flex-start; */
+  flex-direction: column;
+}
+
+ul{
+  background-color: #e2e0e0;
+  /* width: 100dvw; */
+  height: 70dvh;
+  overflow:scroll;
+}
+
+.message {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  width: fit-content;
+  max-width: 80vw;
+  height: min-content;
+  /* right: 0; */
+  align-self: flex-end;
+  overflow-wrap: break-word;
+
+  margin-inline-end: .5rem;
 }

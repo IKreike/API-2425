@@ -2,16 +2,20 @@
 
 {% block content %}
 
-<h1 class="h1">{{ title }}</h1>
+  {% comment %} <h1 class="h1">{{ title }}</h1> {% endcomment %}
 
-<ul class="grid">
-  {% for item in items %}
-    <li>
-      <a href="/plant/{{ item.id }}">
-        {% render 'server/components/card/card.liquid', item: item %}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+  <ul class="flex">
+    {% for message in messages %}
+      <li class="message">
+        {{ message }}
+      </li>
+    {% endfor %}
+    {% comment %} {% for item in items %}
+      <li>
+        <a href="/number/{{ items.number }}">
+          {% render 'server/components/card/card.liquid', items: items %}</a>
+      </li>
+    {% endfor %} {% endcomment %}
+  </ul>
 
 {% endblock %}

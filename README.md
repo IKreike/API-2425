@@ -110,3 +110,11 @@ Als het werkt, zet je je server weer uit door in de terminal de toetscombinatie 
 - Optioneel: Volg het [NodeJS ‘Hello World’ voorbeeld](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
 - Optioneel, iets technischer: Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de NodeJS ontwikkelomgeving.
 
+
+
+beronnen
+https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number
+
+https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+
+https://github.com/fdnd-task/server-side-rendering-server-side-website/blob/main/server.js
