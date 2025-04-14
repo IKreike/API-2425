@@ -26,4 +26,15 @@ ul{
   overflow-wrap: break-word;
 
   margin-inline-end: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  p{
+    color: darkgrey;
+    font-size: smaller;
+    margin-top: .5em;
+    right:0;
+  }
 }

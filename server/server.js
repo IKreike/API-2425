@@ -44,23 +44,48 @@ app
   .listen(3000, () => console.log('Server available on http://localhost:3000'));
 
 let messages = [];
+// FIXME: is eigenlijk hetzelfde object wat steeds overgeschreven word
+const messageInfo = new Object();
 
 app.get('/', async (req, res) => {
   const data = await fetch(ApiUrl)
   console.log(messages);
   const json = await data.json();
 
-  return res.send(renderTemplate('server/views/index.liquid', { title: 'Home', items: json, messages }));
+  return res.send(renderTemplate('server/views/index.liquid', { title: 'Home', items: json, messages, messageInfo}));
 });
 
 // van cyd en copilot
 app.post('/message', async (req, res) => {
+ 
 
   const message = req.body.message;
   if (message) {
-
     // console.log('[MESSAGE!!!]', message);
-    messages.push(message);
+    // messages.push(message);
+
+
+    // instead of putting message in the messages array, we add it to an object
+    // add message and date and id
+    messageInfo.bericht = message;
+    messageInfo.date = new Date().getHours() +":"+ new Date().getMinutes();
+    messageInfo.id = "Iris";
+
+    // log only the timestamp out of the date
+    // FIXME: time currently gets globally updated for all messages (due to it being 1 object?)
+    console.log(messageInfo);
+
+    console.log("test of the object");
+    messages.push(messageInfo.bericht);
+    // messages is de array met alle berichten
+    // messageInfo is het object met alle informatie over het bericht
+
+    for (message) {
+
+    }
+
+
+
 
     // remove the initial message if it is just /random-fact
     messages = messages.filter(message => message !== '/random-fact');
@@ -68,9 +93,9 @@ app.post('/message', async (req, res) => {
     // eigen code
     if (message.includes(`/random-fact`)) {
       console.log("its random fact day");
-      // dont nececerily need to act if the command is only part of the message, yet I could try?
-
+ 
       let number = message.replace('/random-fact ', ''); // remove the command from the message
+      // if the message is a number, use that number for the url
       if (isNaN(number) == false) {
         number = parseInt(number); // change the string into a number
         ApiUrl = `http://numbersapi.com/${number}/trivia?json`;
@@ -84,10 +109,10 @@ app.post('/message', async (req, res) => {
       console.log(json.text);
       messages.push(json.text);
       // messages.push("FUN FACT");
+
+      // reset to a random fact
       ApiUrl = `http://numbersapi.com/random/trivia?json`;
     }
-
-
   }
   res.writeHead(303, { Location: '/' });
   res.end();
