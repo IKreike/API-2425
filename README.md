@@ -118,3 +118,10 @@ https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-vali
 https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
 
 https://github.com/fdnd-task/server-side-rendering-server-side-website/blob/main/server.js
+
+server sent events tryout code
+https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+
+Server sent events uitleg
+https://www.youtube.com/watch?v=4HlNv1qpZFY 
+

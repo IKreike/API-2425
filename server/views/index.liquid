@@ -5,9 +5,9 @@
   {% comment %} <h1 class="h1">{{ title }}</h1> {% endcomment %}
 
   <ul class="flex">
-    {% for message in messages %}
-      <li class="message">
-        {{ message }}
+    {% for messageInfo in messages %}
+      <li class="message" id="{{messageInfo.id}}">
+        {{ messageInfo.bericht }}
         <p>{{messageInfo.date}}</p>
       </li>
     {% endfor %}

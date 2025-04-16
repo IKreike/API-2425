@@ -1,17 +1,13 @@
 import './index.css';
 
 console.log('Hello, world!');
+// const app = require("express")();
 
 
-// vanuit browser tech
-// var inp = document.querySelector('input[type=text]');
-// var i = 0;
-// while (i < inp.length) {
-//     inps[i].addEventListener("input", opslaan);
-//     i++;
-// }
+// dit zorgt ervoor dat de browser evenementen uitleest/ uitzend
+let sse = new EventSource("http://localhost:3000/stream");
+sse.onmessage = console.log
 
-// function opslaan() {
-//   // localstorage api
-//   localStorage.setItem(this.name, this.value);
-// }
+
+// als je een message ontvangt(refresh)s (infinite refresh loop)
+// sse.onmessage = window.location.reload();
