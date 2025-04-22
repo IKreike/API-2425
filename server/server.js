@@ -37,13 +37,13 @@ app.get('/', async (req, res) => {
 // source: https://www.youtube.com/watch?v=4HlNv1qpZFY
 app.get("/stream", (req, res) => {
   res.setHeader("Content-Type", "text/event-stream");
-  res.write("data: " + "oiwehjfjo'iaerhgdo'i!\n\n");
+  res.write("data: " + "content stream established\n\n");
 
   // if we recieve a newMessage event
   events.on("newMessage", (messageInfo) => {
     // message to the console
     // res.write("data: " + "hello!\n\n");
-    res.write("data: " + "reload\n\n");
+    res.write("data: " + "message sent\n\n");
     // message to the terminal
     // console.log("message sent and sruff gor testing");
     // console.log(messageInfo);
@@ -94,6 +94,7 @@ app.post('/message', async (req, res) => {
     // als je een message ontvangt, stuur een ping naar de server
     events.emit("newMessage", messageInfo) // in tweede argument data meegeven
   }
+  // get sent back to the page(reload)
   res.writeHead(303, { Location: '/' });
   res.end();
 })
