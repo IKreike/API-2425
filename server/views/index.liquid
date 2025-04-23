@@ -6,11 +6,14 @@
 
   <ul class="flex">
     {% for messageInfo in messages %}
-      <li class="message" id="{{messageInfo.id}}">
+      <li class="message{%if user != messageInfo.id%} other{%endif %}" id="{{messageInfo.id}}">
+        {{messageInfo.id}}
         {{ messageInfo.bericht }}
         <p>{{messageInfo.date}}</p>
       </li>
     {% endfor %}
+
+    
     {% comment %} {% for item in items %}
       <li>
         <a href="/number/{{ items.number }}">

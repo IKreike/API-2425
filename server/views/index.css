@@ -41,8 +41,17 @@ ul{
   }
 }
 
-#BOT{
+/* base styling
+.user {
+   
+} */
+
+.other{
   align-self: flex-start;
   align-items: start;
   background-color: rgb(178, 204, 226);
+}
+
+.BOT{
+  background-color: red;
 }

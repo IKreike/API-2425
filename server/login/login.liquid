@@ -1,0 +1,13 @@
+{% layout "server/layouts/base.liquid" %}
+
+{% block content %}
+<h1>login pagina</h1>
+<form action="/login" method="post">
+<label>
+    username
+    <input type="text" name="user">
+    <button type="submit">submit</button>
+</label>
+</form>
+
+{% endblock %}

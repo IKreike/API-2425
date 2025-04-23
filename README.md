@@ -111,6 +111,10 @@ Als het werkt, zet je je server weer uit door in de terminal de toetscombinatie 
 - Optioneel, iets technischer: Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de NodeJS ontwikkelomgeving.
 
 
+week3
+- zorg dat het heen en weer goed werkt
+- zorg voor goed documentatie
+
 
 beronnen
 https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number

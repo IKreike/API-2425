@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@tinyhttp/app": "^2.5.2",
+    "@tinyhttp/cookie": "^2.1.1",
     "@tinyhttp/logger": "^2.1.0",
     "body-parser": "^2.2.0",
     "dotenv": "^16.4.7",
