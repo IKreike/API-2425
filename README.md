@@ -1,28 +1,35 @@
 # Verslag API 24/25
 ## week 1
-1. ideegeneratie
+1. ideegeneratie<br>
 Ik vond het best lastig om een idee te bedenken waar ik enthousiast voor werd. Ik denk dat ik hierdoor ook een best moeilijke opdracht heb uitgekozen. Ik had de content api die ik wou gebruiken al vrij snel gevonden, en omdat hij relatief simpel was is er juist heel veel mogelijk. Ik ben uiteindelijk geland op een chatapp met het gebruik van "commands" waarbij je de API kan aanroepen. 
 
 content API: 
 http://numbersapi.com/#52/trivia
+<img src="./assets/brainstorm.jpg" width="200">
+<img src="./assets/week1feedback.jpg" width="500">
+<img src="./assets/wireframes.jpg" width="200">
+
 ## week 2
-2. bericht opslaan in array, arrayelementen inladen in html
+2. bericht opslaan in array, arrayelementen inladen in html<br>
 Het ontdekken van liquid was nog een klus en ik ben een aantal keer flink verdwaald geweest in de structuur van de bestanden. Het was heel fijn om een project als basis over te kunnen nemen en zo toch een deels nieuwe taal en syntax te kunnen ontdekken.
-3. controleren op command, bericht vervangen door bericht van API (en ook met specifieke nummers!)
+3. controleren op command, bericht vervangen door bericht van API (en ook met specifieke nummers!)<br>
 Toen het was gelukt om dit te doen werd ik veel zelfverzekerder in de opdracht, aangezien het de eerste keer het idee had dat ik een stuk code zelf had geschreven (zonder op basis van een template te werken). Ik vind het heel leuk om gewoon met de API te spelen en te kijken wat voor feitje hij nu heeft. 
-4. object maken van bericht voor meer informatie (tijd, ID)
+4. object maken van bericht voor meer informatie (tijd, ID)<br>
 Ik had in week 1 gehoord dat het handig was om een object van het bericht te maken, maar het zonk pas later in waarvoor dat eigenlijk was. Ik vind dat een fijne manier van leren: Je leert iets omdat je het nodig hebt en gebruikt. Ik heb 3 elementen in het object gestopt: het bericht, het tijdstip, en het id van de gebruiker.
+<img src="./assets/week2 feedback.jpg" width="500">
+
 ## week 3
-5. Server-sent events API
+5. Server-sent events API<br>
 Ik heb deze week voor elkaar gekregen dat er een bericht vanuit de server te laten sturen op het moment dat er een bericht word verzonden vanuit een van de window, en dat die bij alle windows uitkomt. Dit is een goede eerste aanraking met de SSE API en het heeft me laten zien dat mijn idee ook mogelijk is. Ik heb verder ook een beetje gekloot met het doorsturen van informatie (de objecten uit de messages array) te versturen met het bericht, maar ik vind het lastig om te verzinnen hoe het bericht daarna opgevangen word.
-6. dmv 'nep- id' een gesprek tussen 2 windows nabootsten.
+6. dmv 'nep- id' een gesprek tussen 2 windows nabootsten.<br>
 Het was echt leuk om te zien dat het werkte hier, want het was best lastig om hier te komen. In de laatste week is het natuurlijk fijn om het in het echt te kunnen doen, maar ik denk dat dit zeker presenteerbaar is. 
 ## week 4
-<img src="./assets/desktop.png" width="200"><img src="./assets/mobile.jpg" width="200">
-7. Login pagina
-8. User ID en cookie API
+<img src="./assets/desktop.png" width="500"><img src="./assets/mobile.jpg" width="200"> <br>
+7. Login pagina<br>
+8. User ID en cookie API<br>
 Grote dank aan Declan voor het helpen deze week. Ik merk aan mezelf dat ik de logica wel snap, maar het nog heel lastig vind om het zelf oplossingen te vinden. Het resultaat is heel gaaf geworden en het is me daarna ook gelukt om de username boven het bericht te krijgen voor nog een duidelijker berichtsysteem.
 
+### conclusie
 Het was echt heel gaaf om dit uiteindelijk werkend te krijgen. Nadat ik het online heb gezet heb ik met een groepje lopen chatten en de limieten van de chat getest. Er kunnen best veel verassende dingen, en het heeft me ideen gegeven wat ik er verder nog mee kan doen.
 
 
