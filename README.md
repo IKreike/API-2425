@@ -4,10 +4,10 @@
 Ik vond het best lastig om een idee te bedenken waar ik enthousiast voor werd. Ik denk dat ik hierdoor ook een best moeilijke opdracht heb uitgekozen. Ik had de content api die ik wou gebruiken al vrij snel gevonden, en omdat hij relatief simpel was is er juist heel veel mogelijk. Ik ben uiteindelijk geland op een chatapp met het gebruik van "commands" waarbij je de API kan aanroepen. 
 
 content API: 
-http://numbersapi.com/#52/trivia
-<img src="./assets/brainstorm.jpg" width="200">
+http://numbersapi.com/#52/trivia <br>
+<img src="./assets/brainstorm.jpg" width="250">
 <img src="./assets/week1feedback.jpg" width="500">
-<img src="./assets/wireframes.jpg" width="200">
+<img src="./assets/wireframes.jpg" width="250">
 
 ## week 2
 2. bericht opslaan in array, arrayelementen inladen in html<br>
@@ -31,6 +31,9 @@ Grote dank aan Declan voor het helpen deze week. Ik merk aan mezelf dat ik de lo
 
 ### conclusie
 Het was echt heel gaaf om dit uiteindelijk werkend te krijgen. Nadat ik het online heb gezet heb ik met een groepje lopen chatten en de limieten van de chat getest. Er kunnen best veel verassende dingen, en het heeft me ideen gegeven wat ik er verder nog mee kan doen.
+<img src="./assets/login.png" width="500">
+<img src="./assets/AMber POV.png" width="500">
+<img src="./assets/Iris POV.png" width="500">
 
 
 ## Huidige features
