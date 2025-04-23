@@ -147,16 +147,24 @@ The rit met het OV nadat dit werkte leek heel snel te gaan
 - image support
 Doordat het bericht direct in de html word gezet, zou ik kunnen checken of het bericht eindigd in een img indicatie (.jpeg, .png etc) en dan het bericht kunnen insluiten in een image tag "<img src="https://i.pinimg.com/736x/dd/a0/90/dda090574e456815e4f80965a773ae61.jpg" width="560">". Zo zou ik plaatjes kunnen renderen in the chatgroep.
 - client-side javascript die op de server werkt
+
 De client-side javascript werkt momenteel helaas niet op de server, waardoor je met de hand moet refreshen om nieuwe berichten te zien en er niet automatisch gescrolld word. Dat is jammer en het verbeterd het leven veel.
 - tijd
+
 Er is een kleine bug met de tijd, want als de minuten 1 getal zijn laat hij ook maar 1 getal zien. Dit zou ik kunnen oplossen door te checken op de hoeveelheid tekens in de huidige minuten en als het een 1 is er een 0 voor zetten. (13:8 => 13:08)
+
 - commands
 Ik zou wel eindeloos kunnen doorgaan met leuke commands verzinnen 
+
 - typing state
-Het zou mogelijk kunnen zijn om met sse events een event af te sturen waarbij er vermeld word of een gebruiker aan het typen is. Dit kan 
+
+Het zou mogelijk kunnen zijn om met sse events een event af te sturen waarbij er vermeld word of een gebruiker aan het typen is.
+
 - colored names
+
 Het zou nuttig zijn als elke gebruiker een eigen (gerandomiseerde?) kleur heefd in zijn naam duidelijker te maken wie wie is
 - speech to text
+
 Dat zou toch cool zijn? Ook een extra API
 
 
