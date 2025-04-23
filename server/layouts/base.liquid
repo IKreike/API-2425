@@ -31,15 +31,6 @@
     <main>
       {% block content %}
       {% endblock %}
-
-      <form action="/message" method="post">
-        <textarea id="story" name="message" rows="1" placeholder="Vertel me alles"></textarea>  
-        <input type="hidden" name="user" value={{user}}>
-      <button class="sent">send</button>
-      </form>
     </main>
-    {% comment %} <footer>
-      Deze footer staat op elke pagina
-    </footer> {% endcomment %}
   </body>
 </html>

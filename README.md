@@ -110,13 +110,58 @@ Als het werkt, zet je je server weer uit door in de terminal de toetscombinatie 
 - Optioneel: Volg het [NodeJS ‘Hello World’ voorbeeld](https://medium.com/@mohammedijas/hello-world-in-node-js-b333275ddc89)
 - Optioneel, iets technischer: Lees de eerste vijf delen van [Introduction to Node](https://nodejs.dev/en/learn/) als je een meer in-depth introductie wilt met de NodeJS ontwikkelomgeving.
 
+# Processverslag
+## week 1
+1. ideegeneratie
+Ik vond het best lastig om een idee te bedenken waar ik enthousiast voor werd. Ik denk dat ik hierdoor ook een best moeilijke opdracht heb uitgekozen. Ik had de content api die ik wou gebruiken al vrij snel gevonden, en omdat hij relatief simpel was is er juist heel veel mogelijk. Ik ben uiteindelijk geland op een chatapp met het gebruik van "commands" waarbij je de API kan aanroepen. 
+
+content API: 
+http://numbersapi.com/#52/trivia
+## week 2
+2. bericht opslaan in array, arrayelementen inladen in html
+3. controleren op command, bericht vervangen door bericht van API
+4. object maken van bericht voor meer informatie (tijd, ID)
+## week 3
+5. Server-sent events API
+## week 4
+6. Login pagina
+7. User ID en cookie API
+
+
+
+
 
 week3
 - zorg dat het heen en weer goed werkt
 - zorg voor goed documentatie
 
 
-beronnen
+## Huidige features
+- /random-fact command
+- meerdere devices in 1 chatroom
+- kan code schrijven in de chat (its not a bug its a feature)
+- supported on mobile
+The rit met het OV nadat dit werkte leek heel snel te gaan
+
+## wat zou ik nog willen toevoegen/verbeteren
+- image support
+Doordat het bericht direct in de html word gezet, zou ik kunnen checken of het bericht eindigd in een img indicatie (.jpeg, .png etc) en dan het bericht kunnen insluiten in een image tag "<img src="https://i.pinimg.com/736x/dd/a0/90/dda090574e456815e4f80965a773ae61.jpg" width="560">". Zo zou ik plaatjes kunnen renderen in the chatgroep.
+- client-side javascript die op de server werkt
+De client-side javascript werkt momenteel helaas niet op de server, waardoor je met de hand moet refreshen om nieuwe berichten te zien en er niet automatisch gescrolld word. Dat is jammer en het verbeterd het leven veel.
+- tijd
+Er is een kleine bug met de tijd, want als de minuten 1 getal zijn laat hij ook maar 1 getal zien. Dit zou ik kunnen oplossen door te checken op de hoeveelheid tekens in de huidige minuten en als het een 1 is er een 0 voor zetten. (13:8 => 13:08)
+- commands
+Ik zou wel eindeloos kunnen doorgaan met leuke commands verzinnen 
+- typing state
+Het zou mogelijk kunnen zijn om met sse events een event af te sturen waarbij er vermeld word of een gebruiker aan het typen is. Dit kan 
+- colored names
+Het zou nuttig zijn als elke gebruiker een eigen (gerandomiseerde?) kleur heefd in zijn naam duidelijker te maken wie wie is
+- speech to text
+Dat zou toch cool zijn? Ook een extra API
+
+
+
+### bronnen
 https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number
 
 https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
@@ -129,3 +174,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server
 Server sent events uitleg
 https://www.youtube.com/watch?v=4HlNv1qpZFY 
 
+hoe krijg je de site online
+https://github.com/fdnd-task/connect-your-tribe-profile-card/blob/main/docs/visitekaartje-met-nodejs.md#visitekaartje-integreren-en-live-testen
+
+Declan
+
+Cyd
+
+chatgpt

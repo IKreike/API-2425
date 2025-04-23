@@ -1,25 +1,20 @@
 {% layout "server/layouts/base.liquid" %}
 
 {% block content %}
-
-  {% comment %} <h1 class="h1">{{ title }}</h1> {% endcomment %}
-
   <ul class="flex">
     {% for messageInfo in messages %}
+      <h3>{{messageInfo.id}}</h3>
       <li class="message{%if user != messageInfo.id%} other{%endif %}" id="{{messageInfo.id}}">
-        {{messageInfo.id}}
         {{ messageInfo.bericht }}
         <p>{{messageInfo.date}}</p>
       </li>
     {% endfor %}
-
-    
-    {% comment %} {% for item in items %}
-      <li>
-        <a href="/number/{{ items.number }}">
-          {% render 'server/components/card/card.liquid', items: items %}</a>
-      </li>
-    {% endfor %} {% endcomment %}
   </ul>
+
+  <form action="/message" method="post">
+  <textarea id="story" name="message" rows="1" placeholder="Chat with others"></textarea>  
+  <input type="hidden" name="user" value={{user}}>
+<button class="sent">send</button>
+</form>
 
 {% endblock %}
