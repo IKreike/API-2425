@@ -30,19 +30,19 @@ Het was echt leuk om te zien dat het werkte hier, want het was best lastig om hi
 Grote dank aan Declan voor het helpen deze week. Ik merk aan mezelf dat ik de logica wel snap, maar het nog heel lastig vind om het zelf oplossingen te vinden. Het resultaat is heel gaaf geworden en het is me daarna ook gelukt om de username boven het bericht te krijgen voor nog een duidelijker berichtsysteem.
 
 ### conclusie
-Het was echt heel gaaf om dit uiteindelijk werkend te krijgen. Nadat ik het online heb gezet heb ik met een groepje lopen chatten en de limieten van de chat getest. Er kunnen best veel verassende dingen, en het heeft me ideen gegeven wat ik er verder nog mee kan doen.
+Het was echt heel gaaf om dit uiteindelijk werkend te krijgen. Nadat ik het online heb gezet heb ik met een groepje lopen chatten en de limieten van de chat getest. Er kunnen best veel verassende dingen, en het heeft me ideen gegeven wat ik er verder nog mee kan doen.<br>
 <img src="./assets/login.png" width="500">
 <img src="./assets/AMber POV.png" width="500">
 <img src="./assets/Iris POV.png" width="500">
 
 
 ## Huidige features
-- /random-fact command
+- /random-fact [number] command
 - meerdere devices in 1 chatroom
 - kan code schrijven in de chat (its not a bug its a feature)
 - supported on mobile
 - usernames
-The rit met het OV nadat dit werkte leek heel snel te gaan
+- cookie
 
 ## wat zou ik nog willen toevoegen/verbeteren
 - image support<br>
@@ -63,13 +63,19 @@ Dat zou toch cool zijn? Ook een extra API
 <b></b>
 
 ### bronnen
-content API: 
+Content API: 
 http://numbersapi.com/#52/trivia
 
-https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number
-
+Web API (server-sent event):
 https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
 
+Web API (cookie):
+https://www.npmjs.com/package/@tinyhttp/cookie?activeTab=readme
+
+Logic trouble:
+https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number
+
+server-side:
 https://github.com/fdnd-task/server-side-rendering-server-side-website/blob/main/server.js
 
 server sent events tryout code: 
@@ -81,8 +87,10 @@ https://www.youtube.com/watch?v=4HlNv1qpZFY
 hoe krijg je de site online: 
 https://github.com/fdnd-task/connect-your-tribe-profile-card/blob/main/docs/visitekaartje-met-nodejs.md#visitekaartje-integreren-en-live-testen
 
-Declan
+used for the scroll sticking to the bottom: 
+https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up
 
-Cyd
-
-chatgpt
+En natuurlijk:
+Declan,
+Cyd en
+chatgpt.

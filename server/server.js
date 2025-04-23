@@ -32,7 +32,7 @@ app.get('/', async (req, res) => {
   const data = await fetch(ApiUrl)
   const json = await data.json();
 
-  // krijg de username vanuit het opgeslagen cookie (of neem een blank string om errors te voorkomen)
+  // krijg de username vanuit het opgeslagen cookie (of neem een blank string om errors te voorkomen) (scr: declan)
   const cookie = parse(req.headers.cookie || "");
   const user = cookie.username;
   console.log(user)
