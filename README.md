@@ -155,7 +155,7 @@ Er is een kleine bug met de tijd, want als de minuten 1 getal zijn laat hij ook 
 Ik zou wel eindeloos kunnen doorgaan met leuke commands verzinnen 
 - typing state
 Het zou mogelijk kunnen zijn om met sse events een event af te sturen waarbij er vermeld word of een gebruiker aan het typen is.
-- <b>colored names </b>
+- <b>colored names </b> <br>
 Het zou nuttig zijn als elke gebruiker een eigen (gerandomiseerde?) kleur heefd in zijn naam duidelijker te maken wie wie is
 - <b> speech to text </b>
 Dat zou toch cool zijn? Ook een extra API
