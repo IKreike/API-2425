@@ -34,6 +34,10 @@ let sse = new EventSource("http://localhost:3000/stream");
 // })
 
 const ClientMessages = [];
+// used for the scroll sticking to the bottom
+// https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up
+const out = document.querySelector('ul');
+
 
 sse.addEventListener("message", (messageText) => {
     console.log(messageText.data);
@@ -85,6 +89,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// used for the scroll sticking to the bottom
-// https://stackoverflow.com/questions/18614301/keep-overflow-div-scrolled-to-bottom-unless-user-scrolls-up
-const out = document.querySelector('ul');
