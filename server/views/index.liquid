@@ -11,10 +11,10 @@
     {% endfor %}
   </ul>
 
-  <form action="/message" method="post">
+<form action="/message" method="post">
   <textarea id="story" name="message" rows="1" placeholder="Chat with others"></textarea>  
   <input type="hidden" name="user" value={{user}}>
-<button class="sent">send</button>
+  <button class="sent">send</button>
 </form>
 
 {% endblock %}
